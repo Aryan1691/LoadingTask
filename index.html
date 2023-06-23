@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* CSS styles for the page layout */
+
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        border: 0;
+      }
+
+      * {
+        text-decoration: none;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        left: 150px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      a {
+        color: white;
+      }
+      .nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(147, 129, 129);
+        width: 7%;
+        padding-block: 20px;
+        padding-inline: 20px;
+        gap: 10px;
+        height: 100vh;
+      }
+      /* CSS styles for the page layout */
+
+      .active {
+        display: block;
+      }
+
+      .container2 > div:not(.active) {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation section -->
+
+      <div class="nav">
+        <a href="#Home" onclick="showContent('Home')">Home</a>
+        <a href="#Contact" onclick="showContent('Contact')">Contact</a>
+        <a href="#Information" onclick="showContent('Information')">Information</a>
+        <a href="#Guide" onclick="showContent('Guide')">Guide</a>
+      </div>
+      
+      <!-- Content section -->
+      <div class="container2">
+        <!-- Home content -->
+        <div id="Home" class="active">
+          <h1>HOME</h1>
+          <div>
+            Welcome to our Virtual Haven! At Virtual Haven, we believe that the
+            world can be a better place when we embrace the power of technology
+            to create meaningful connections and enrich our lives. Our mission
+            is to provide you with a transformative digital experience that
+            brings joy, knowledge, and inspiration right to your fingertips.
+            Whether you're seeking knowledge, looking for inspiration, or simply
+            in need of some virtual escapism, Virtual Haven has got you covered.
+            Our platform offers a diverse range of engaging content, carefully
+            curated to cater to your unique interests and passions. Immerse
+            yourself in our vast collection of articles, thought-provoking
+            essays, and captivating stories penned by talented writers from
+            around the globe. Discover the latest trends, explore diverse
+            cultures, or delve into the depths of science and technology. Our
+            content will stimulate your mind and broaden your horizons. But
+            Virtual Haven is more than just a content hub. It's a vibrant
+            community of like-minded individuals who share a passion for
+            learning, exploring, and connecting. Join our forums to engage in
+            stimulating discussions, exchange ideas, and forge meaningful
+            connections with fellow knowledge seekers. Experience our
+            cutting-edge virtual reality simulations that transport you to
+            incredible destinations, both real and imagined. Explore ancient
+            civilizations, traverse breathtaking landscapes, or embark on
+            thrilling adventures without leaving the comfort of your home. Let
+            your imagination run wild as you unlock new dimensions of
+            exploration. At Virtual Haven, we prioritize your privacy and
+            security. Rest assured that your data is safeguarded, allowing you
+            to immerse yourself in our digital sanctuary with complete peace of
+            mind. So come on in, and let Virtual Haven be your sanctuary in the
+            digital realm. Expand your mind, fuel your curiosity, and connect
+            with a global community of knowledge enthusiasts. Your journey of
+            discovery starts here. Welcome home.
+          </div>
+        </div>
+        <!-- Contact content -->
+        <div id="Contact">
+          <h1>Contact</h1>
+          <div>
+            your imagination run wild as you unlock new dimensions of
+            exploration. At Virtual Haven, we prioritize your privacy and
+            security. Rest assured that your data is safeguarded, allowing you
+            to immerse yourself in our digital sanctuary with complete peace of
+            mind. So come on in, and let Virtual Haven be your sanctuary in the
+            digital realm. Expand your mind, fuel your curiosity, and connect
+            with a global community of knowledge Welcome to our Virtual Haven!
+            At Virtual Haven, we believe that the world can be a better place
+            when we embrace the power of technology to create meaningful
+            connections and enrich our lives. Our mission is to provide you with
+            a transformative digital experience that brings joy, knowledge, and
+            inspiration right to your fingertips. Whether you're seeking
+            knowledge, looking for inspiration, or simply in need of some
+            virtual escapism, Virtual Haven has got you covered. Our platform
+            offers a diverse range of engaging content, carefully curated to
+            cater to your unique interests and passions. Immerse yourself in our
+            vast collection of articles, thought-provoking essays, and
+            captivating stories penned by talented writers from around the
+            globe. Discover the latest trends, explore diverse cultures, or
+            delve into the depths of science and technology. Our content will
+            stimulate your mind and broaden your horizons. But Virtual Haven is
+            more than just a content hub. It's a vibrant community of
+            like-minded individuals who share a passion for learning, exploring,
+            and connecting. Join our forums to engage in stimulating
+            discussions, exchange ideas, and forge meaningful connections with
+            fellow knowledge seekers. Experience our cutting-edge virtual
+            reality simulations that transport you to incredible destinations,
+            both real and imagined. Explore ancient civilizations, traverse
+            breathtaking landscapes, or embark on thrilling adventures without
+            leaving the comfort of your home. Let your imagination run wild as
+            you unlock new dimensions of exploration. At Virtual Haven, we
+            prioritize your privacy and security. Rest assured that your data is
+            safeguarded, allowing you to immerse yourself in our digital
+            sanctuary with complete peace of mind. So come on in, and let
+            Virtual Haven be your sanctuary in the digital realm. Expand your
+            mind, fuel your curiosity, and connect with a global community of
+            knowledge enthusiasts. Your journey of discovery starts here.
+            Welcome home.
+          </div>
+        </div>
+        <!-- Information content -->
+        <div id="Information">
+          <h1>Information</h1>
+          <div>
+            to create meaningful connections and enrich our lives. Our mission
+            is to provide you with a transformative digital experience that
+            brings joy, knowledge, and inspiration right to your fingertips.
+            Whether you're seeking knowledge, looking for inspiration, or simply
+            in need of some virtual escapism, Virtual Haven has got you covered.
+            Our platform offers a diverse range of engaging content, carefully
+            curated to cater to your unique interests and passions. Immerse
+            yourself in our vast collection of articles, thought-pr
+          </div>
+        </div>
+        <!-- Guide content -->
+        <div id="Guide">
+          <h1>Guide</h1>
+          <div>
+            essays, and captivating stories penned by talented writers from
+            around the globe. Discover the latest trends, explore diverse
+            cultures, or delve into the depths of science and technology. Our
+            content will stimulate your mind and broaden your horizons. But
+            Virtual Haven is more than just a content hub. It's a vibrant
+            community of like-minded individuals who share a passion for
+            learning, exploring, and connecting. Join our forums to engage in
+            stimulating discussions, exchange ideas, and forge meaningful
+            connections with fellow knowledge seekers. Experience our
+            cutting-edge virtual reality simulations that transport you to
+            incredible destinations, both real and imagined. Explore ancient
+            civilizations, traverse breathtaking landscapes, or embark on
+            thrilling adventures without leaving the comfort of your home. Let
+            your imagination run wild as you unlock new dimensions of
+            exploration. At Virtual Haven, we prioritize your privacy and
+            security. Rest assured that your data is safeguarded, allowing you
+            to immerse yourself in our digital sanctuary with complete peace of
+            mind. So come on in, and let Virtual Haven be your sanctuary in the
+            digital realm. Expand your mind, fuel your curiosity, and connect
+            with a global community of knowledge enthusiasts. Your journey of
+            discovery starts here. Welcome home.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to show the selected content based on its ID
+      function showContent(contentID) {
+        const contentDivs = document.querySelectorAll(".container2 > div");
+        for (let i = 0; i < contentDivs.length; i++) {
+          if (contentDivs[i].id === contentID) {
+            contentDivs[i].classList.add("active");
+          } else {
+            contentDivs[i].classList.remove("active");
+          }
+        }
+      }
+
+      // Trigger showContent function on initial page load to show the correct content based on the URL hash
+      window.addEventListener("load", function () {
+        const hash = window.location.hash.substring(1);
+        showContent(hash || "Home");
+      });
+    </script>
+  </body>
+</html>
